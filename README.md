@@ -12,7 +12,7 @@ deploy and run them myself on Linux with Docker.
 - **Backend:** FastAPI · SQLAlchemy · Alembic · pytest · ReportLab
 - **Frontend:** Next.js · React
 - **Data:** PostgreSQL · SQLite · BM25 / hybrid search
-- **AI:** OpenAI API · LLM tool-calling · retrieval (RAG) · MCP
+- **AI:** Claude API · OpenAI API · LLM tool-calling · retrieval (RAG) · embeddings · MCP
 - **Ops:** Docker Compose · nginx · systemd · Linux VPS · GitHub Actions
 - **Microsoft:** Power Apps Component Framework (PCF) · Dynamics 365
 
@@ -20,12 +20,13 @@ deploy and run them myself on Linux with Docker.
 
 | Project | What it is | Stack |
 |---|---|---|
+| [**melbourne-tech-jobs**](https://github.com/Nilish1994/melbourne-tech-jobs) | Live dashboard of the Melbourne tech job market: a daily Adzuna collector with a quota ledger and advisory locks, deterministic skill extraction, and analytics for skill demand, trends, salaries and locations | FastAPI · PostgreSQL · Next.js · Docker |
+| [**ask-my-docs**](https://github.com/Nilish1994/ask-my-docs) | Documentation Q&A with Claude: answers cite the exact docs passage. Hybrid BM25 + embedding retrieval, measured by a 42-question eval in CI (hit@5 0.93 vs 0.86 for BM25 alone) | Claude API · FastAPI · Next.js · RAG |
 | [**ai-playground**](https://github.com/Nilish1994/ai-playground) | Backend for a personal AI assistant: OpenAI Responses API, async Postgres, dependency injection, structured logging and a tool registry built for extension | FastAPI · SQLAlchemy · Docker |
 | [**crypto-market-research-engine**](https://github.com/Nilish1994/crypto-market-research-engine) | Collects Binance futures data every 5 minutes, detects support/resistance levels, logs outcomes and writes daily/weekly scorecards. It runs unattended under systemd, has pytest suites, and live trading is deliberately disabled | Python · SQLite · systemd |
 | **Facilities services website** | Production Next.js marketing site for a Melbourne facilities business, with suburb landing pages, visit tracking, and a Docker/nginx deploy | Next.js · TypeScript · Docker |
 | **Staff allocation PDF generator** | Internal tool that turns staffing-sheet CSV exports into A3 daily allocation PDFs using documented allocation rules | FastAPI · ReportLab · Next.js · PostgreSQL |
 | **Roster pattern viewer** | Imports aged-care roster workbooks and analyses fortnightly staff, location and shift patterns | FastAPI · PostgreSQL · React |
-| **Jobs ingestion API** | Ingests Melbourne job listings from the Adzuna API with quota-aware rate limiting, retries with backoff and idempotent upserts | FastAPI · PostgreSQL · Alembic |
 | [**retrieval-lab**](https://github.com/Nilish1994/retrieval-lab) | BM25 search engine written from scratch, with optional stemming and a CLI | Python · pytest |
 
 <sub>Some projects are private because they contain client or business data. I'm happy to walk through the code in an interview.</sub>
