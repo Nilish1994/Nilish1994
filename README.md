@@ -31,3 +31,7 @@ deploy and run them myself on Linux with Docker.
 | [**retrieval-lab**](https://github.com/Nilish1994/retrieval-lab) | BM25 search engine written from scratch, with optional stemming and a CLI | Python · pytest |
 
 <sub>Some projects are private because they contain client or business data. I'm happy to walk through the code in an interview.</sub>
+
+## 📫 Contact
+
+[LinkedIn](https://www.linkedin.com/in/nilish-shehan-a8579a192)
