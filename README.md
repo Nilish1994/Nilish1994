@@ -35,4 +35,4 @@ deploy and run them myself on Linux with Docker.
 
 ## 📫 Contact
 
-[LinkedIn](https://www.linkedin.com/in/nilish-shehan-a8579a192)
+[LinkedIn](https://www.linkedin.com/in/nilish-aluthwatta-a8579a192)
